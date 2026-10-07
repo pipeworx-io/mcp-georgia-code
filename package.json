@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-georgia-code",
+  "version": "0.1.0",
+  "description": "Official Code of Georgia Annotated (O.C.G.A.) — Georgia state statutes by",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-georgia-code": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "georgia-code"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-georgia-code.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-d1481ed9c578d1dcf2415d333bca97800fb9450ffd95b1054a7ac0a65ef14643",
+    "sourceCommit": "eb436cf60f06c9b79701a15cd1670609580544a5"
+  }
+}
