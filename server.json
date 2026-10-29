@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/georgia-code",
   "title": "Georgia Code",
   "description": "Official Code of Georgia Annotated (O.C.G.A.) — Georgia state statutes by citation, topic search…",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/georgia-code",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-georgia-code",

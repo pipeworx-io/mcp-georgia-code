@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-georgia-code",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Official Code of Georgia Annotated (O.C.G.A.) — Georgia state statutes by citation, topic search, historical versions, and amendment/enactment history.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-georgia-code": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "georgia-code"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-georgia-code.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/georgia-code",
   "pipeworx": {
-    "sourceHash": "v1-d7a6be6235e1cf337b41d6d193a84ca85909aae863363466edbc47c31ffb0b11",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "georgia-code",
+    "gatewaySlug": "georgia-code",
+    "sourceHash": "v1-b9cfa3004c165925d6cdd39060cbdd3c3adeab69af568cab515c1f3d42c32378",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }

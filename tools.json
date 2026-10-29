@@ -1,0 +1,42 @@
+[
+  {
+    "name": "ga_code_section",
+    "description": "Get a section of the Official Code of Georgia Annotated (O.C.G.A.) — Georgia state law — by citation. \"16-5-1\" is murder; \"44-7-34\" is the security-deposit-return statute. Accepts natural citation forms: \"16-5-1\", \"O.C.G.A. § 16-5-1\", \"Ga. Code Ann. § 16-5-1\", \"Code Section 16-5-1\", \"Title 16, Chapter 5, Section 1\". Returns the current statutory text, status (active/repealed/reserved), the legislative/amendment history (the Acts that enacted and amended it), editor's notes and cross references, and every stored historical version when a section has more than one (e.g. a delayed effective date). Keyless. Use for \"what does O.C.G.A. 16-5-1 say\" or to check a Georgia statute a case or contract relies on.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "citation": {
+          "type": "string",
+          "description": "Section citation, e.g. \"16-5-1\" or \"O.C.G.A. § 44-7-34\". Title-chapter-section; the title is the part before the first dash."
+        }
+      },
+      "required": [
+        "citation"
+      ]
+    }
+  },
+  {
+    "name": "ga_code_search",
+    "description": "Search the Official Code of Georgia Annotated BY TOPIC or keyword rather than citation — \"security deposit\", \"concealed carry\", \"DUI per se limit\", \"homicide\". Full-text search over the statutory text and catchlines; returns ranked sections with their citations and a highlighted snippet so you can call ga_code_section for the full text of one. Pass \"headings_only\": true to match only chapter/article headings and catchlines rather than body text. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Topic or keywords, e.g. \"security deposit return\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results, default 10, max 25."
+        },
+        "headings_only": {
+          "type": "boolean",
+          "description": "Match only headings/catchlines, not body text. Default false."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  }
+]
