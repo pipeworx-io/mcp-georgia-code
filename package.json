@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-georgia-code",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Official Code of Georgia Annotated (O.C.G.A.) — Georgia state statutes by citation, topic search, historical versions, and amendment/enactment history.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "georgia-code",
     "gatewaySlug": "georgia-code",
-    "sourceHash": "v1-b9cfa3004c165925d6cdd39060cbdd3c3adeab69af568cab515c1f3d42c32378",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-195ad56f53cd1e1c08e6273911eb053a1f57010c1811f240cd04df0d7e19f1bc",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
